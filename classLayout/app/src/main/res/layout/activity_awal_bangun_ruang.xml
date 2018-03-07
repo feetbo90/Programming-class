@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="linear.app.bel.classlayout.AwalBangunRuang">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/segitiga"
+            android:layout_above="@id/persegi"
+            android:text="@string/segitiga"
+            />
+
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/persegi"
+            android:layout_centerInParent="true"
+            android:text="@string/persegi"
+            />
+
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/persegipanjang"
+            android:layout_below="@id/persegi"
+            android:text="@string/persegipanjang"
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

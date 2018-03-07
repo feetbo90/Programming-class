@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FirstActivity">
+        <activity android:name=".AwalBangunRuang">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".ScoreActivity" />
-        <activity android:name=".SecondActivity"></activity>
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".FirstActivity" />
+        <activity android:name=".Segitiga"></activity>
     </application>
 
 </manifest>

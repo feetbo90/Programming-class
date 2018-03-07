@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">classLayout</string>
+    <string name="segitiga">Segitiga</string>
+    <string name="persegi">Persegi</string>
+    <string name="persegipanjang">Persegi Panjang</string>
+    <string name="alas">Alas</string>
+    <string name="tinggi">Tinggi</string>
+    <string name="tekan">Tekan</string>
 </resources>
