@@ -1,5 +1,6 @@
 package linear.app.bel.classlayout
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -25,6 +26,11 @@ class SharedPreference : AppCompatActivity() {
         password = pref.getString(keyPassword, "")
         Toast.makeText(this@SharedPreference, "username : $username , password : $password ", Toast.LENGTH_LONG).show()
 
+        if(!username.equals("") && !password.equals(""))
+        {
+            pindahIntent()
+        }
+
 
         // username = budi password = 1234, testing
         button.setOnClickListener {
@@ -35,7 +41,7 @@ class SharedPreference : AppCompatActivity() {
                 editor.putString(keyPassword, editpassword.text.toString())
                 editor.commit()
                 Toast.makeText(this@SharedPreference, "Login berhasil", Toast.LENGTH_LONG).show()
-
+                pindahIntent()
             }
             else{
                 Toast.makeText(this@SharedPreference, "Username atau Password tidak cocok", Toast.LENGTH_LONG).show()
@@ -43,4 +49,12 @@ class SharedPreference : AppCompatActivity() {
 
         }
     }
+
+    fun pindahIntent()
+    {
+        var intent = Intent(this@SharedPreference, AwalBangunRuang::class.java)
+        startActivity(intent)
+    }
+
+
 }
