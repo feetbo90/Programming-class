@@ -6,4 +6,7 @@
     <string name="alas">Alas</string>
     <string name="tinggi">Tinggi</string>
     <string name="tekan">Tekan</string>
+    <string name="push">Push</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
 </resources>

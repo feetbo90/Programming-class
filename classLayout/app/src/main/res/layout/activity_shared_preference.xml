@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="linear.app.bel.classlayout.SharedPreference">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="@string/username"
+        android:id="@+id/user"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:layout_marginStart="5dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/user"
+        android:id="@+id/editusername"
+        android:hint="@string/username"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="@string/password"
+        android:id="@+id/password"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:layout_below="@id/user"
+        android:layout_marginStart="5dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/password"
+        android:layout_below="@id/user"
+        android:id="@+id/editpassword"
+        android:inputType="textPassword"
+        android:hint="@string/password"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="@string/push"
+        android:layout_below="@id/editpassword"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
