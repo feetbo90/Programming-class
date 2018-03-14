@@ -24,7 +24,7 @@ class SharedPreference : AppCompatActivity() {
 
         username = pref.getString(keyUsername, "")
         password = pref.getString(keyPassword, "")
-        Toast.makeText(this@SharedPreference, "username : $username , password : $password ", Toast.LENGTH_LONG).show()
+        //Toast.makeText(this@SharedPreference, "username : $username , password : $password ", Toast.LENGTH_LONG).show()
 
         if(!username.equals("") && !password.equals(""))
         {
@@ -40,8 +40,9 @@ class SharedPreference : AppCompatActivity() {
                 editor.putString(keyUsername, editusername.text.toString())
                 editor.putString(keyPassword, editpassword.text.toString())
                 editor.commit()
-                Toast.makeText(this@SharedPreference, "Login berhasil", Toast.LENGTH_LONG).show()
+                //Toast.makeText(this@SharedPreference, "Login berhasil", Toast.LENGTH_LONG).show()
                 pindahIntent()
+
             }
             else{
                 Toast.makeText(this@SharedPreference, "Username atau Password tidak cocok", Toast.LENGTH_LONG).show()
@@ -54,6 +55,7 @@ class SharedPreference : AppCompatActivity() {
     {
         var intent = Intent(this@SharedPreference, AwalBangunRuang::class.java)
         startActivity(intent)
+        this@SharedPreference.finish()
     }
 
 

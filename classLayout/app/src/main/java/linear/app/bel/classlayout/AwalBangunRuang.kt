@@ -10,11 +10,16 @@ class AwalBangunRuang : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_awal_bangun_ruang)
+        var pref = applicationContext.getSharedPreferences("Login", 0)
+        var editor = pref.edit()
 
 
         segitiga.setOnClickListener {
             var intent = Intent(this@AwalBangunRuang, Segitiga::class.java)
             startActivity(intent)
+
+            editor.clear()
+            editor.commit()
         }
 
     }
