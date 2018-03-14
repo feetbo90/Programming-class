@@ -9,4 +9,6 @@
     <string name="push">Push</string>
     <string name="password">Password</string>
     <string name="username">Username</string>
+    <string name="laki">Laki-Laki</string>
+    <string name="pr">Perempuan</string>
 </resources>
