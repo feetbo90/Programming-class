@@ -21,7 +21,8 @@
         <activity android:name=".FirstActivity" />
         <activity android:name=".Segitiga" />
         <activity android:name=".AwalBangunRuang" />
-        <activity android:name=".SharedPreference"/>
+        <activity android:name=".SharedPreference" />
+        <activity android:name=".KonversiMataUang"></activity>
     </application>
 
 </manifest>

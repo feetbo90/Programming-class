@@ -11,4 +11,7 @@
     <string name="username">Username</string>
     <string name="laki">Laki-Laki</string>
     <string name="pr">Perempuan</string>
+    <string name="dollar">Dollar</string>
+    <string name="euro">Euro</string>
+    <string name="input">Input</string>
 </resources>

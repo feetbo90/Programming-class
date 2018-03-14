@@ -29,6 +29,16 @@ class RadioGroupActivity : AppCompatActivity() {
 
         }
 
+        radioGroup.setOnCheckedChangeListener { radioGroup, id ->
+
+//            if (R.id.lk == i)
+            //radioGroup.checkedRadioButtonId
+            var radio = findViewById<RadioButton>(id)
+            var text = radio.text.toString()
+            Toast.makeText(this@RadioGroupActivity, text, Toast.LENGTH_LONG).show()
+
+        }
+
 
     }
 }
