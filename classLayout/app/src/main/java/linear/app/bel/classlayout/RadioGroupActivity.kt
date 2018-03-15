@@ -2,9 +2,7 @@ package linear.app.bel.classlayout
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.RadioButton
-import android.widget.RadioGroup
-import android.widget.Toast
+import android.widget.*
 import kotlinx.android.synthetic.main.activity_radio_group.*
 
 class RadioGroupActivity : AppCompatActivity() {
@@ -13,6 +11,7 @@ class RadioGroupActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_radio_group)
 
+       // var button = findViewById<Button>(R.id.btn)
         btn.setOnClickListener {
 
             if(lk.isChecked){
@@ -24,8 +23,8 @@ class RadioGroupActivity : AppCompatActivity() {
                 Toast.makeText(this@RadioGroupActivity, "Perempuan ", Toast.LENGTH_LONG).show()
 
 
-            if(lk2.isChecked)
-                Toast.makeText(this@RadioGroupActivity, "Laki - Laki ", Toast.LENGTH_LONG).show()
+            //if(lk2.isChecked)
+              //  Toast.makeText(this@RadioGroupActivity, "Laki - Laki ", Toast.LENGTH_LONG).show()
 
         }
 

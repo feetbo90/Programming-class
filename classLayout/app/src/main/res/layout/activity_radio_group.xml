@@ -18,13 +18,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/lk"
-            android:text="@string/laki"/>
+            android:text="@string/dollar"/>
 
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/pr"
-            android:text="@string/pr"/>
+            android:text="@string/rupiah"/>
 
 
 
