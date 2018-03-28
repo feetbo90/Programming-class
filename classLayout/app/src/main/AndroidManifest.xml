@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="linear.app.bel.classlayout">
 
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SpinnerActivity">
+        <activity android:name=".AmbilDataDariInternetActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,7 +28,8 @@
         <activity android:name=".KonversiMataUang" />
         <activity android:name=".RecyclerActivity" />
         <activity android:name=".RadioGroupActivity" />
-        <activity android:name=".RecyclerActivity2"/>
+        <activity android:name=".RecyclerActivity2" />
+        <activity android:name=".SpinnerActivity"/>
     </application>
 
 </manifest>
