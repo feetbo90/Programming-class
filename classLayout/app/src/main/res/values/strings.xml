@@ -18,6 +18,7 @@
 
 
     <string name="country_prompt">Choose a country</string>
+    <string name="note">Note</string>
     <string-array name="country_arrays">
         <item>Malaysia</item>
         <item>United States</item>
