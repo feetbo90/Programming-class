@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".crudSqlite">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,7 +29,8 @@
         <activity android:name=".RadioGroupActivity" />
         <activity android:name=".RecyclerActivity2" />
         <activity android:name=".SpinnerActivity" />
-        <activity android:name=".AmbilDataDariInternetActivity"/>
+        <activity android:name=".AmbilDataDariInternetActivity" />
+        <activity android:name=".crudSqlite"></activity>
     </application>
 
 </manifest>

@@ -28,4 +28,13 @@ object SampleGetFromInternet{
         }
     }
 
+
+    fun Login(username: String, password: String):Deferred<String>{
+
+        return async (CommonPool){
+            val request = Request.Builder().url("http://bpjs.dhuocreative.com/bpjs/ceklogin.php?username=${username}&password=${password}").build()
+            client.newCall(request).execute().body().string()
+        }
+    }
+
 }
